@@ -123,6 +123,10 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := 400dpi
 PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
+# Graphene Camera
+PRODUCT_PACKAGES += \
+    GrapheneCamera
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.samsung \
