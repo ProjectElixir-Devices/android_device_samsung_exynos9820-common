@@ -1,0 +1,2 @@
+allow surfaceflinger sysfs:dir {read};
+get_prop(surfaceflinger, vendor_hwc_prop)
