@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl:32 \
-    android.hardware.audio@7.1-impl:32 \
+    android.hardware.audio@7.0-impl:32 \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
     android.hidl.allocator@1.0.vendor:32 \
