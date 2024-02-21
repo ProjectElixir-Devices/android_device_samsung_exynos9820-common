@@ -279,6 +279,10 @@ PRODUCT_PACKAGES += \
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/linker/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+    
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePkgs    
 
 # RIL
 PRODUCT_PACKAGES += \
