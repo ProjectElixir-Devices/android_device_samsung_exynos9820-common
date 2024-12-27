@@ -84,10 +84,6 @@ PRODUCT_PACKAGES += \
     gralloc.exynos9820 \
     libion
 
-# Doze
-PRODUCT_PACKAGES += \
-    SamsungDoze
-
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -367,9 +363,10 @@ endif
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePkgs
+
 # Elixir Stuff    
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_AOSP_RECOVERY := true
 EXTRA_UDFPS_ANIMATIONS := true
-TARGET_USES_PICO_GAPPS := true
