@@ -152,6 +152,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 ## RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+$(call soong_config_set,cbd,protocol,sipc)
+$(call soong_config_set,cbd,use_legacy_sipc_ioctl,true)
+
 ## SELinux
 BOARD_SEPOLICY_TEE_FLAVOR := teegris
 include device/lineage/sepolicy/exynos/sepolicy.mk

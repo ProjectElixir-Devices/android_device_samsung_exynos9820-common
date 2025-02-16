@@ -287,6 +287,7 @@ PRODUCT_PACKAGES += \
     libdsms_vendor:64
 
 PRODUCT_PACKAGES += \
+    cbd \
     secril_config_svc \
     sehradiomanager
 
@@ -309,6 +310,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/samsung \
+    hardware/samsung_slsi-linaro/exynos/cpboot_v3 \
     hardware/samsung_slsi-linaro/exynos/libaudio/audiohal \
     hardware/samsung_slsi-linaro/exynos/gralloc/gralloc3
 

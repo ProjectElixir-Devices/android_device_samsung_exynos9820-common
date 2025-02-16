@@ -78,7 +78,6 @@ system/etc/libnfc-nci.conf:vendor/etc/libnfc-nci.conf
 
 ## RIL
 -vendor/bin/cass
--vendor/bin/cbd
 vendor/etc/init/cass.rc
 vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/plmn_delta.bin
